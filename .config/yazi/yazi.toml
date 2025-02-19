@@ -1,0 +1,18 @@
+
+[rules]
+# Rule for opening PDF files
+"*.pdf" = "setsid evince {file} >/dev/null 2>&1 &"
+
+# You can replace `evince` with your preferred PDF viewer.
+# Example for Okular:
+# "*.pdf" = "setsid okular {file} >/dev/null 2>&1 &"
+
+# Add more file types if needed
+"*.jpg" = "setsid eog {file} >/dev/null 2>&1 &"
+"*.png" = "setsid eog {file} >/dev/null 2>&1 &"
+
+# prevent pdf files being closed when yazi is closed
+[opener]
+open = [
+  { run = 'xdg-open "$@"', orphan = true, desc = "Open", for = "unix" }, # add orphan = true
+]
