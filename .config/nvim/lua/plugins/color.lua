@@ -11,14 +11,9 @@ return {
         transparent = {
           enabled = true,
         },
+        variant = "autumn", -- "spring" | "summer" | "autumn" | "winter" (default)
       })
     end,
-  },
-  {
-    "craftzdog/solarized-osaka.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
   },
 
   {
