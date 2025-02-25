@@ -15,11 +15,29 @@ return {
       })
     end,
   },
+  {
+    "rebelot/kanagawa.nvim",
+    config = function()
+      require("kanagawa").setup({
+        transparent = false,
+        colors = {
+          theme = {
+            all = {
+              ui = {
+                bg_gutter = "none",
+              },
+            },
+          },
+        },
+      })
+    end,
+  },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "solarized",
+      --colorscheme = "solarized",
+      colorscheme = "kanagawa",
     },
   },
 }

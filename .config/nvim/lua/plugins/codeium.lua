@@ -12,7 +12,8 @@ return {
         virtual_text = {
           enabled = true,
 
-          -- These are the defaults
+          --NOTE: These are the defaults
+          --without explicit declaration of default config this plugin doesn't work
 
           -- Set to true if you never want completions to be shown automatically.
           manual = false,
