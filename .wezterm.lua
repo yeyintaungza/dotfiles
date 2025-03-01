@@ -18,29 +18,29 @@ config.line_height = 1.0
 
 -- Colors
 config.colors = {
-	foreground = "#839496", -- Solarized base0 (soft grayish white)
-	background = "#002b36", -- Solarized base03 (dark background)
-	cursor_bg = "#268bd2", -- Solarized blue (cursor background)
-	cursor_fg = "#002b36", -- Solarized base03 (cursor foreground)
+	foreground = "#DCD7BA", -- Kanagawa base foreground (light yellowish beige)
+	background = "#1F1F28", -- Kanagawa base background (dark, almost black)
+	cursor_bg = "#7E9CD8", -- Kanagawa cursor background (light blue)
+	cursor_fg = "#1F1F28", -- Kanagawa cursor foreground (dark background)
 	ansi = {
-		"#073642", -- black (Solarized base02)
-		"#dc322f", -- red (Solarized red)
-		"#859900", -- green (Solarized green)
-		"#b58900", -- yellow (Solarized yellow)
-		"#268bd2", -- blue (Solarized blue)
-		"#d33682", -- magenta (Solarized magenta)
-		"#2aa198", -- cyan (Solarized cyan)
-		"#eee8d5", -- white (Solarized base2)
+		"#3B4B5A", -- black (Kanagawa dark grayish blue)
+		"#E46876", -- red (Kanagawa red)
+		"#A8C023", -- green (Kanagawa green)
+		"#F1A440", -- yellow (Kanagawa yellow)
+		"#7E9CD8", -- blue (Kanagawa blue)
+		"#9E70B3", -- magenta (Kanagawa magenta)
+		"#50A8A1", -- cyan (Kanagawa cyan)
+		"#DCD7BA", -- white (Kanagawa light beige)
 	},
 	brights = {
-		"#002b36", -- bright black (Solarized base03)
-		"#dc322f", -- bright red (Solarized red)
-		"#859900", -- bright green (Solarized green)
-		"#b58900", -- bright yellow (Solarized yellow)
-		"#268bd2", -- bright blue (Solarized blue)
-		"#d33682", -- bright magenta (Solarized magenta)
-		"#2aa198", -- bright cyan (Solarized cyan)
-		"#fdf6e3", -- bright white (Solarized base3)
+		"#1F1F28", -- bright black (Kanagawa base dark background)
+		"#E46876", -- bright red (Kanagawa red)
+		"#A8C023", -- bright green (Kanagawa green)
+		"#F1A440", -- bright yellow (Kanagawa yellow)
+		"#7E9CD8", -- bright blue (Kanagawa blue)
+		"#9E70B3", -- bright magenta (Kanagawa magenta)
+		"#50A8A1", -- bright cyan (Kanagawa cyan)
+		"#F1F1F0", -- bright white (Kanagawa lightest background)
 	},
 }
 
