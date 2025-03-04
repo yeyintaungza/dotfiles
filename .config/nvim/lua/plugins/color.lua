@@ -21,6 +21,7 @@ return {
       require("kanagawa").setup({
         transparent = true,
         keywordStyle = { italic = false },
+        commentStyle = { italic = false },
         colors = {
           theme = {
             all = {
