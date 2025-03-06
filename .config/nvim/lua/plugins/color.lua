@@ -34,6 +34,9 @@ return {
       })
     end,
   },
+  {
+    "cpea2506/one_monokai.nvim",
+  },
 
   {
     "LazyVim/LazyVim",

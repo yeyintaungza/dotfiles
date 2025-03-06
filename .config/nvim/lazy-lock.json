@@ -29,6 +29,7 @@
   "nvim-treesitter": { "branch": "master", "commit": "1adcd5711929e44d1bc9e59fbf7d94656cf6d389" },
   "nvim-treesitter-textobjects": { "branch": "master", "commit": "8b2d4d519f3516d09910f5baf48d1a47b594f0ce" },
   "nvim-ts-autotag": { "branch": "main", "commit": "a1d526af391f6aebb25a8795cbc05351ed3620b5" },
+  "one_monokai.nvim": { "branch": "main", "commit": "33ada482edaba502e5654d7bc40dab01d828f36d" },
   "persistence.nvim": { "branch": "main", "commit": "166a79a55bfa7a4db3e26fc031b4d92af71d0b51" },
   "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
   "render-markdown.nvim": { "branch": "main", "commit": "059f503ae5490f93346e5ad19b56aec12ead12a6" },
