@@ -1,0 +1,5 @@
+theme = "Solarized Dark - Patched"
+window-decoration = none
+background-opacity = 0.9
+background-blur = true
+font-size = 14

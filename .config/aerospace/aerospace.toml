@@ -25,12 +25,12 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 # working
 alt-enter = '''exec-and-forget osascript -e '
-do shell script "wezterm start"
+do shell script "ghostty start"
 '
 '''
 # open ranger
 cmd-e  = '''exec-and-forget osascript -e '
-do shell script "wezterm start -e yazi /Users/zadeveloper"
+do shell script "ghostty start -e yazi /Users/zadeveloper"
 '
 '''
 
