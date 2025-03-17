@@ -30,7 +30,7 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 # '''
 
 alt-enter = '''exec-and-forget osascript -e '
-do shell script "open -n /Applications/Ghostty.app"
+do shell script "open -a Ghostty.app -n"
 '
 '''
 # open ranger
