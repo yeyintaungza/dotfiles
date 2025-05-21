@@ -1,6 +1,4 @@
 return {
-  -- dependency for flutter-tools
-  { "nvim-lua/plenary.nvim" },
   {
     "nvim-flutter/flutter-tools.nvim",
     lazy = false,

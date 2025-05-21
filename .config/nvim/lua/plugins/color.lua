@@ -1,27 +1,31 @@
 return {
-
+  -- Using Lazy
   {
-    "maxmx03/solarized.nvim",
-    lazy = false,
-    priority = 1000,
+    "navarasu/onedark.nvim",
+    priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
-      vim.o.termguicolors = true
-      vim.o.background = "dark"
-      require("solarized").setup({
-        transparent = {
-          enabled = true,
-        },
-        variant = "autumn", -- "spring" | "summer" | "autumn" | "winter" (default)
+      require("onedark").setup({
+        style = "deep",
+        transparent = false,
       })
     end,
   },
   {
-    "xiantang/darcula-dark.nvim",
-    dependencies = {
-      "nvim-treesitter/nvim-treesitter",
+    "maxmx03/solarized.nvim",
+    lazy = false,
+    priority = 1000,
+    ---@type solarized.config
+    opts = {
+      transparent = {
+        enabled = true,
+      },
+      variant = "autumn", -- "spring" | "summer" | "autumn" | "winter" (default)
     },
+    config = function(_, opts)
+      vim.o.termguicolors = true
+      require("solarized").setup(opts)
+    end,
   },
-
   {
     "LazyVim/LazyVim",
     opts = {
