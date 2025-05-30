@@ -1,35 +1,36 @@
 return {
-  -- Using Lazy
-  {
-    "navarasu/onedark.nvim",
-    priority = 1000, -- make sure to load this before all the other start plugins
-    config = function()
-      require("onedark").setup({
-        style = "deep",
-        transparent = false,
-      })
-    end,
-  },
-  {
-    "maxmx03/solarized.nvim",
-    lazy = false,
-    priority = 1000,
-    ---@type solarized.config
-    opts = {
-      transparent = {
-        enabled = true,
-      },
-      variant = "autumn", -- "spring" | "summer" | "autumn" | "winter" (default)
+    {
+        "sainnhe/gruvbox-material",
+        lazy = false,
+        priority = 1000,
+        config = function()
+            vim.g.gruvbox_material_enable_italic = true
+            vim.g.gruvbox_material_background = "medium"
+            vim.g.gruvbox_material_foreground = "original"
+        end,
     },
-    config = function(_, opts)
-      vim.o.termguicolors = true
-      require("solarized").setup(opts)
-    end,
-  },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "solarized",
+    {
+        "rebelot/kanagawa.nvim",
+        config = function()
+            require("kanagawa").setup({
+                colors = {
+                    theme = {
+                        all = {
+                            ui = {
+                                bg_gutter = "none",
+                            },
+                        },
+                    },
+                },
+            })
+        end,
     },
-  },
+    { "lunarvim/horizon.nvim" },
+
+    {
+        "LazyVim/LazyVim",
+        opts = {
+            colorscheme = "horizon",
+        },
+    },
 }

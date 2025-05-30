@@ -14,7 +14,7 @@ config.font = wezterm.font_with_fallback({
 	"JetBrains Mono",
 })
 config.font_size = 14.0
-config.line_height = 1.0
+config.line_height = 1.5
 
 -- Colors
 config.colors = {
