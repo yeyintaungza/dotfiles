@@ -9,22 +9,6 @@ return {
             vim.g.gruvbox_material_foreground = "original"
         end,
     },
-    {
-        "rebelot/kanagawa.nvim",
-        config = function()
-            require("kanagawa").setup({
-                colors = {
-                    theme = {
-                        all = {
-                            ui = {
-                                bg_gutter = "none",
-                            },
-                        },
-                    },
-                },
-            })
-        end,
-    },
     { "lunarvim/horizon.nvim" },
 
     {
