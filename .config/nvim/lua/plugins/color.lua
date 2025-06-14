@@ -9,12 +9,11 @@ return {
             vim.g.gruvbox_material_foreground = "original"
         end,
     },
-    { "lunarvim/horizon.nvim" },
 
     {
         "LazyVim/LazyVim",
         opts = {
-            colorscheme = "horizon",
+            colorscheme = "gruvbox-material",
         },
     },
 }
