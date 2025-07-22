@@ -4,7 +4,7 @@
 
 return {
   base46 = {
-    theme = "onedark",
+    theme = "bearded-arc",
   },
   nvdash = { load_on_startup = true },
   ui = {
