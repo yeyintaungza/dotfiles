@@ -1,14 +1,17 @@
-//* vscode settings
 {
-  "workbench.sideBar.location": "right",
   "editor.minimap.enabled": false,
-  "workbench.colorTheme": "Bear Theme",
   "editor.lineNumbers": "relative",
+  "editor.semanticHighlighting.enabled": true,
   "zenMode.hideLineNumbers": false,
   "dart.previewFlutterUiGuides": true,
   "dart.previewFlutterUiGuidesCustomTracking": true,
   "vim.useSystemClipboard": true,
-  "workbench.settings.applyToAllProfiles": [],
+  "workbench.settings.applyToAllProfiles": [
+    
+
+
+
+  ],
   "vim.leader": "<space>",
   "vim.normalModeKeyBindings": [
     // windows
@@ -168,6 +171,12 @@
         "workbench.action.toggleSidebarVisibility"
       ]
     },
+  {
+    "before": ["<leader>", "b", "o"],
+    "commands": ["workbench.action.closeOtherEditors"]
+  },
+
+
     {
       // Explorer NeoTree (cwd)
       "before": [
@@ -257,6 +266,87 @@
   ],
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "Dart-Code.flutter",
-  "chat.commandCenter.enabled": false,
   "vim.showMarksInGutter": true,
+  "git.openRepositoryInParentFolders": "never",
+  "zenMode.hideStatusBar": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.sideBar.location": "right",
+  "gruvboxMaterial.darkCursor": "red",
+  "gruvboxMaterial.darkPalette": "mix",
+  "debug.enableStatusBarColor": false,
+  "editor.lineHeight": 2,
+  "editor.fontSize": 14,
+  "terminal.explorerKind": "external",
+  "terminal.external.osxExec": "warp.app",
+  "everforest.darkContrast": "hard",
+  "everforest.darkCursor": "orange",
+  "markdown-preview-enhanced.enablePreviewZenMode": false,
+  "markdown-preview-enhanced.revealjsTheme": "black.css",
+  "markdown-preview-enhanced.previewTheme": "one-light.css",
+  "dart.debugExternalPackageLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "everforest.darkWorkbench": "flat",
+  "workbench.colorCustomizations": {
+    "[Vira*]": {
+      "toolbar.activeBackground": "#80CBC426",
+      "button.background": "#80CBC4",
+      "button.hoverBackground": "#80CBC4cc",
+      "extensionButton.separator": "#80CBC433",
+      "extensionButton.background": "#80CBC414",
+      "extensionButton.foreground": "#80CBC4",
+      "extensionButton.hoverBackground": "#80CBC433",
+      "extensionButton.prominentForeground": "#80CBC4",
+      "extensionButton.prominentBackground": "#80CBC414",
+      "extensionButton.prominentHoverBackground": "#80CBC433",
+      "activityBarBadge.background": "#80CBC4",
+      "activityBar.activeBorder": "#80CBC4",
+      "activityBarTop.activeBorder": "#80CBC4",
+      "list.inactiveSelectionIconForeground": "#80CBC4",
+      "list.activeSelectionForeground": "#80CBC4",
+      "list.inactiveSelectionForeground": "#80CBC4",
+      "list.highlightForeground": "#80CBC4",
+      "sash.hoverBorder": "#80CBC480",
+      "list.activeSelectionIconForeground": "#80CBC4",
+      "scrollbarSlider.activeBackground": "#80CBC480",
+      "editorSuggestWidget.highlightForeground": "#80CBC4",
+      "textLink.foreground": "#80CBC4",
+      "progressBar.background": "#80CBC4",
+      "pickerGroup.foreground": "#80CBC4",
+      "tab.activeBorder": "#80CBC4",
+      "notificationLink.foreground": "#80CBC4",
+      "editorWidget.resizeBorder": "#80CBC4",
+      "editorWidget.border": "#80CBC4",
+      "settings.modifiedItemIndicator": "#80CBC4",
+      "panelTitle.activeBorder": "#80CBC4",
+      "breadcrumb.activeSelectionForeground": "#80CBC4",
+      "menu.selectionForeground": "#80CBC4",
+      "menubar.selectionForeground": "#80CBC4",
+      "editor.findMatchBorder": "#80CBC4",
+      "selection.background": "#80CBC440",
+      "statusBarItem.remoteBackground": "#80CBC414",
+      "statusBarItem.remoteHoverBackground": "#80CBC4",
+      "statusBarItem.remoteForeground": "#80CBC4",
+      "notebook.inactiveFocusedCellBorder": "#80CBC480",
+      "commandCenter.activeBorder": "#80CBC480",
+      "chat.slashCommandForeground": "#80CBC4",
+      "chat.avatarForeground": "#80CBC4",
+      "activityBarBadge.foreground": "#000000",
+      "button.foreground": "#000000",
+      "statusBarItem.remoteHoverForeground": "#000000"
+    }
+  },
+  "json.schemas": [],
+  "workbench.navigationControl.enabled": false,
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  "dart.devToolsLocation": {
+    "default": "beside",
+    "inspector": "sidebar"
+  },
+  "workbench.editor.empty.hint": "hidden",
+  "projectManager.git.baseFolders": [
+    ""
+  ],
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.foldingImportsByDefault": true,
 }

@@ -1,16 +1,20 @@
 return {
 
     {
-        "olimorris/onedarkpro.nvim",
-        priority = 1000, -- Ensure it loads first
+        "navarasu/onedark.nvim",
+        priority = 1000, -- make sure to load this before all the other start plugins
+        config = function()
+            require("onedark").setup({
+                style = "darker",
+            })
+            -- Enable theme
+            require("onedark").load()
+        end,
     },
-    { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
-    { "Shatur/neovim-ayu" },
-
     {
         "LazyVim/LazyVim",
         opts = {
-            colorscheme = "gruvbox",
+            colorscheme = "onedark",
         },
     },
 }
