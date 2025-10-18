@@ -14,6 +14,20 @@
   "vim.easymotionKeys": "asdghklqwertyuiopzxcvbnmfj",
   "vim.leader": "<space>",
   "vim.normalModeKeyBindingsNonRecursive": [
+        // close other buffers
+        {
+          "before": ["<leader>", "b", "o"],
+          "commands": [
+            "workbench.action.closeOtherEditors"
+          ]
+        },
+    // Close the current buffer
+    {
+      "before": ["<leader>", "b", "d"],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
     {
       "before": [
         ":",
