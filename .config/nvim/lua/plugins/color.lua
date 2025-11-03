@@ -8,9 +8,10 @@ return {
                 style = "darker",
             })
             -- Enable theme
-            require("onedark").load()
         end,
     },
+    { "projekt0n/github-nvim-theme", name = "github-theme" },
+
     {
         "LazyVim/LazyVim",
         opts = {

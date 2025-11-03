@@ -7,12 +7,15 @@
   "dart.previewFlutterUiGuidesCustomTracking": true,
   "vim.useSystemClipboard": true,
   "workbench.settings.applyToAllProfiles": [
-    
-
-
-
   ],
   "vim.leader": "<space>",
+  // set jj as esc
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ]
   "vim.normalModeKeyBindings": [
     // windows
     {

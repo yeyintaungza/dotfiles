@@ -9,3 +9,6 @@ vim.diagnostic.config({
     underline = true, -- Underline the problematic code
     update_in_insert = false, -- Don't update diagnostics in insert mode
 })
+
+-- Map 'jj' to Escape in Insert mode (i)
+vim.keymap.set("i", "jj", "<Esc>", { noremap = true, silent = true })
