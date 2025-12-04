@@ -1,0 +1,25 @@
+{
+  "languages": {
+    "Dart": {
+      "tab_size": 4
+    }
+  },
+  "base_keymap": "VSCode",
+  "relative_line_numbers": "enabled",
+  "gutter": {
+    "line_numbers": true
+  },
+  "minimap": {
+    "show": "never"
+  },
+  "buffer_font_fallbacks": ["JetBrains Mono"],
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "Ayu Light",
+    "dark": "Ayu Dark"
+  }
+}

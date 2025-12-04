@@ -25,6 +25,9 @@ nnoremap <S-H> :action PreviousTab<CR>
 " Use <Space> as <Leader>
 let mapleader = " "
 
+# flash.nvim in vim
+nmap s <Action>(flash.search)
+xmap s <Action>(flash.search)
 
 " close other tabs
 nnoremap <leader>bo :tabonly<CR>
@@ -44,3 +47,6 @@ nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
+
+" go to references
+nmap gr :action FindUsages<CR>
