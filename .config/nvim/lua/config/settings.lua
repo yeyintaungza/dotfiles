@@ -1,5 +1,5 @@
 -- disable mouse
-vim.opt.mouse = ""
+--vim.opt.mouse = ""
 
 -- enable lsp lines
 vim.diagnostic.config({
@@ -12,4 +12,3 @@ vim.diagnostic.config({
 
 -- Map 'jj' to Escape in Insert mode (i)
 vim.keymap.set("i", "jj", "<Esc>", { noremap = true, silent = true })
-
