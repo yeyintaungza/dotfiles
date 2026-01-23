@@ -20,6 +20,13 @@ return {
   {
     "olimorris/onedarkpro.nvim",
     priority = 1000,
+    config = function()
+      require("onedarkpro").setup({
+        options = {
+          transparency = true,
+        },
+      })
+    end,
   },
   {
     "projekt0n/github-nvim-theme",
@@ -35,7 +42,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "github_dark_dimmed",
+      colorscheme = "ayu",
     },
   },
 }

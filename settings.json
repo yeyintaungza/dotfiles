@@ -34,6 +34,16 @@
     },
     {
       "before": [
+        "<leader>",
+        "s",
+        "d"
+      ],
+      "commands": [
+        "workbench.panel.markers.view.focus"
+      ]
+    },
+    {
+      "before": [
         "S"
       ],
       "commands": [
