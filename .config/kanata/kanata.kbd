@@ -1,0 +1,23 @@
+;; home row mod with kanata
+(defcfg
+  process-unmapped-keys yes
+  danger-enable-cmd yes
+)
+
+(defsrc
+  a s d f ;
+)
+
+(defalias
+  a_ctl (tap-hold 200 200 a lctl) ;; ctrl
+  s_alt (tap-hold 200 200 s lalt) ;; alt
+  d_sft (tap-hold 200 200 d lsft) ;; shift
+  f_gui (tap-hold 200 200 f lmet) ;; cmd
+
+  sem_ctl (tap-hold 200 200 ; lctl) ;; ctrl
+
+)
+
+(deflayer base
+  @a_ctl @s_alt @d_sft @f_gui @sem_ctl
+)

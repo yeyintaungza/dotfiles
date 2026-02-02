@@ -1,23 +1,5 @@
 return {
   {
-    "Shatur/neovim-ayu",
-    config = function()
-      require("ayu").setup({
-        overrides = {
-          Normal = { bg = "None" },
-          NormalFloat = { bg = "none" },
-          ColorColumn = { bg = "None" },
-          SignColumn = { bg = "None" },
-          Folded = { bg = "None" },
-          FoldColumn = { bg = "None" },
-          CursorLine = { bg = "None" },
-          CursorColumn = { bg = "None" },
-          VertSplit = { bg = "None" },
-        },
-      })
-    end,
-  },
-  {
     "olimorris/onedarkpro.nvim",
     priority = 1000,
     config = function()
@@ -29,11 +11,17 @@ return {
     end,
   },
   {
-    "projekt0n/github-nvim-theme",
+    "rebelot/kanagawa.nvim",
     config = function()
-      require("github-theme").setup({
-        options = {
-          transparent = true,
+      require("kanagawa").setup({
+        colors = {
+          theme = {
+            all = {
+              ui = {
+                bg_gutter = "none",
+              },
+            },
+          },
         },
       })
     end,
@@ -42,7 +30,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "ayu",
+      colorscheme = "kanagawa",
     },
   },
 }
