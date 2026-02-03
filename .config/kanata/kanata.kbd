@@ -1,23 +1,27 @@
 
 (defcfg
   process-unmapped-keys yes
-  danger-enable-cmd yes
+  tap-time 120
+  hold-time 200
 )
 
 (defsrc
-  a s d f l ;
-)
-
-(defalias
-  a_sft   (tap-hold 200 200 a  lsft) ;; shift
-  s_gui   (tap-hold 200 200 s  lmet) ;; cmd
-  d_alt   (tap-hold 200 200 d  lalt) ;; alt
-  f_ctl   (tap-hold 200 200 f  lctl) ;; ctrl
-
-  l_gui   (tap-hold 200 200 l  lmet) ;; cmd
-  sem_sft (tap-hold 200 200 ; lsft) ;; shift
+  caps a s d f j k l ;
 )
 
 (deflayer base
-  @a_sft @s_gui @d_alt @f_ctl @l_gui @sem_sft
+  ;; caps: esc when tapped, ctrl when held
+  (tap-hold 120 200 esc lctl) 
+
+  ;; home row mods
+  (tap-hold 120 200 a lshift)
+  (tap-hold 120 200 s lalt)
+  ;; lmeta => cmd in mac , super in linux
+  (tap-hold 120 200 d lmeta)
+  (tap-hold 120 200 f lctl)
+
+  (tap-hold 120 200 j lctl)
+  (tap-hold 120 200 k lmeta)
+  (tap-hold 120 200 l lalt)
+  (tap-hold 120 200 ; lshift)
 )

@@ -3,12 +3,14 @@
         {
             "complex_modifications": {
                 "parameters": {
-                    "basic.to_delayed_action_delay_milliseconds": 100,
+                    "basic.to_delayed_action_delay_milliseconds": 250,
+                    "basic.to_if_alone_timeout_milliseconds": 500,
                     "basic.to_if_held_down_threshold_milliseconds": 200
                 },
                 "rules": [
                     {
-                        "description": "New Rule (change left_shift+caps_lock to page_down, right_shift+caps_lock to left_command+mission_control)",
+                        "description": "Custom 1",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "caps_lock" },
