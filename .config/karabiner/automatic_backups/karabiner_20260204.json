@@ -4,12 +4,12 @@
             "complex_modifications": {
                 "parameters": {
                     "basic.to_delayed_action_delay_milliseconds": 200,
-                    "basic.to_if_alone_timeout_milliseconds": 250,
-                    "basic.to_if_held_down_threshold_milliseconds": 150
+                    "basic.to_if_held_down_threshold_milliseconds": 200
                 },
                 "rules": [
                     {
                         "description": "Custom 1",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "caps_lock" },
@@ -89,14 +89,7 @@
                                 "to_if_held_down": [{ "key_code": "left_shift" }],
                                 "type": "basic"
                             }
-                        ],
-                        "parameters": {
-                            "basic.simultaneous_threshold_milliseconds": 50,
-                            "basic.to_delayed_action_delay_milliseconds": 200,
-                            "basic.to_if_alone_timeout_milliseconds": 350,
-                            "basic.to_if_held_down_threshold_milliseconds": 200,
-                            "mouse_motion_to_scroll.speed": 100
-                        }
+                        ]
                     }
                 ]
             },
