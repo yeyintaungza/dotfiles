@@ -1,12 +1,11 @@
 return {
   {
-    "olimorris/onedarkpro.nvim",
+    "navarasu/onedark.nvim",
     priority = 1000,
     config = function()
-      require("onedarkpro").setup({
-        options = {
-          transparency = true,
-        },
+      require("onedark").setup({
+        style = "deep",
+        transparent = true,
       })
     end,
   },
@@ -24,6 +23,15 @@ return {
           },
         },
       })
+    end,
+  },
+  {
+    "nickkadutskyi/jb.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+    config = function()
+      require("jb").setup({ transparent = false })
     end,
   },
 
