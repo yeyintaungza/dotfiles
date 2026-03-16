@@ -16,3 +16,8 @@
 [2026-01-15 09:10:29] SUCCESS: Power logs
 [2026-01-15 09:10:29] SUCCESS: Memory exception reports
 [2026-01-15 09:10:29] SUCCESS: System diagnostic trace logs
+[2026-03-06 09:36:23] SUCCESS: System crash reports
+[2026-03-06 09:36:24] SUCCESS: System logs
+[2026-03-06 09:36:29] SUCCESS: Browser code signature caches, 1 items
+[2026-03-06 09:36:39] SUCCESS: System diagnostic logs
+[2026-03-06 09:36:39] SUCCESS: Power logs
