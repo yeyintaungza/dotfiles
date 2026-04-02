@@ -41,6 +41,8 @@ map <Leader>gf <action>(com.mituuz.fuzzier.FuzzierVCS)
 map <Leader>ca <action>(ShowIntentionActions)
 " refactor
 map <Leader>cr <action>(Refactorings.QuickListPopupAction)
+" quic fix
+nnoremap <leader>sd :action ActivateProblemsViewToolWindow
 
 " window movements as in neovim
 nmap <C-h> <C-w>h

@@ -1,25 +1,33 @@
 {
-  "languages": {
-    "Dart": {
-      "tab_size": 2
-    }
+  "project_panel": {
+    "dock": "right"
   },
-  "base_keymap": "VSCode",
-  "relative_line_numbers": "enabled",
-  "gutter": {
-    "line_numbers": true
-  },
-  "minimap": {
-    "show": "never"
-  },
-  "buffer_font_fallbacks": ["JetBrains Mono"],
+  "theme": "Kanagawa",
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
   "buffer_font_family": "JetBrainsMono Nerd Font",
+
+  "relative_line_numbers": true,
+  "show_minimap": false,
+
+  "tab_size": 2,
+  "hard_tabs": false,
+
   "vim_mode": true,
-  "ui_font_size": 16,
-  "buffer_font_size": 15,
-  "theme": {
-    "mode": "system",
-    "light": "Ayu Light",
-    "dark": "Ayu Dark"
+
+  "cursor_blink": true,
+
+  "indent_guides": {
+    "enabled": true
+  },
+
+  "preferred_line_length": 100,
+
+  "soft_wrap": "none",
+
+  "show_whitespaces": "none",
+
+  "git": {
+    "inline_blame": false
   }
 }
