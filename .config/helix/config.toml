@@ -23,3 +23,5 @@ C-y = [
   ':open %sh{cat /tmp/unique-file}',
   ':redraw',
 ]
+"C-g" = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw", ":reload-all"]
+

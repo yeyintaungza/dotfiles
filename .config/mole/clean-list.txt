@@ -1,0 +1,80 @@
+# Mole Cleanup Preview - 2026-04-07 09:02:10
+#
+# How to protect files:
+# 1. Copy any path below to ~/.config/mole/whitelist
+# 2. Run: mo clean --whitelist
+#
+# Example:
+#   /Users/*/Library/Caches/com.example.app
+#
+
+
+=== User essentials ===
+/Users/zacompany/Library/Caches  # 10.56GB, 24 items
+/Users/zacompany/Library/Logs  # 70.3MB, 10 items
+
+=== App caches ===
+/Users/zacompany/Library/Application Support/com.apple.wallpaper/aerials/thumbnails  # 8.0MB, 156 items
+
+=== Browsers ===
+/Users/zacompany/Library/Caches/BraveSoftware/Brave-Browser/Default  # 2.05GB
+/Users/zacompany/Library/Application Support/BraveSoftware/Brave-Browser/Default/GPUCache  # 5.8MB, 5 items
+/Users/zacompany/Library/Application Support/BraveSoftware/Brave-Browser/component_crx_cache  # 28.4MB, 22 items
+/Users/zacompany/Library/Application Support/BraveSoftware/Brave-Browser/ShaderCache  # 558KB, 5 items
+/Users/zacompany/Library/Application Support/BraveSoftware/Brave-Browser/GrShaderCache  # 558KB, 5 items
+/Users/zacompany/Library/Application Support/BraveSoftware/Brave-Browser/GraphiteDawnCache  # 13.2MB, 79 items
+
+=== Cloud & Office ===
+
+=== Developer tools ===
+/Users/zacompany/.npm/_cacache  # 40.9MB, 2 items
+/Users/zacompany/.npm/_logs  # 86KB, 5 items
+/Users/zacompany/.oh-my-zsh/cache  # 2KB, 2 items
+/Users/zacompany/flutter/HardwareMartBackend/.dart_tool  # 459.6MB
+/Users/zacompany/flutter/HardwareMartBackend/build  # 2.54GB
+/Users/zacompany/flutter/HardwareMartFrontend/.dart_tool  # 213.9MB
+/Users/zacompany/flutter/HardwareMartFrontend/build  # 1.37GB
+/Users/zacompany/flutter/MyanmarPostConsumerApp/.dart_tool  # 240.1MB
+/Users/zacompany/flutter/MyanmarPostConsumerApp/build  # 2.20GB
+/Users/zacompany/flutter/TalkTikoMan/.dart_tool  # 279.9MB
+/Users/zacompany/flutter/TalkTikoMan/build  # 2.57GB
+/Users/zacompany/Library/Caches/Google/AndroidStudio2025.3.2  # 920.2MB, 19 items
+/Users/zacompany/.android/cache  # 3.6MB, 42 items
+/Users/zacompany/Library/Developer/Xcode/UserData/IB Support/Simulator Devices  # 36.7MB
+/Users/zacompany/Library/Logs/JetBrains/IdeaIC2025.2  # 9.4MB
+/Users/zacompany/Library/Caches/com.postmanlabs.mac  # 82KB, 2 items
+/Users/zacompany/Library/Logs/CoreSimulator  # 22.3MB, 4 items
+/Users/zacompany/Library/Caches/com.apple.dt.Xcode  # 1.2MB, 4 items
+/Users/zacompany/Library/Developer/Xcode/DerivedData  # 5.12GB, 25 items
+/Users/zacompany/Library/Application Support/Code/logs  # 15.2MB, 10 items
+/Users/zacompany/Library/Application Support/Code/Cache  # 287.0MB, 2 items
+/Users/zacompany/Library/Application Support/Code/CachedData  # 601.8MB, 4 items
+/Users/zacompany/Library/Caches/Homebrew  # 7.04GB, 148 items
+
+=== Applications ===
+/Users/zacompany  # 169KB, 2 items
+
+=== Virtualization ===
+
+=== Application Support ===
+
+=== Orphaned data ===
+
+=== Apple Silicon updates ===
+
+=== Device backups ===
+
+=== Time Machine ===
+
+=== Large files ===
+
+=== System Data clues ===
+
+=== Project artifacts ===
+
+# ============================================
+# Summary
+# ============================================
+# Potential cleanup: 36.78GB
+# Items: 709
+# Categories: 36
