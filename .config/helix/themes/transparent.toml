@@ -1,3 +1,2 @@
-inherit = "tokyonight_moon"
-"ui.background" = {}
-
+inherits = "tokyonight_moon"
+"ui.background" ={}

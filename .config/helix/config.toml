@@ -1,4 +1,4 @@
-heme = "catppuccin_mocha"
+theme = "catppuccin_mocha"
 
 [editor]
 line-number = "relative"
