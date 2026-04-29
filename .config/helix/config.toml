@@ -1,4 +1,4 @@
-theme = "catppuccin_mocha"
+theme = "catppuccin_macchiato"
 
 [editor]
 line-number = "relative"
@@ -14,6 +14,7 @@ normal = "block"
 select = "underline"
 
 [keys.normal]
+S-b = ":echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}"
 S-h = ":buffer-previous"
 S-l = ":buffer-next"
 S-e = [
