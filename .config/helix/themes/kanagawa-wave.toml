@@ -1,0 +1,7 @@
+inherits = "kanagawa"
+
+# Removes gutter background
+"ui.gutter" = { bg = "none" }
+# # Optionally remove gutter background for special areas
+"ui.gutter.line-number" = { bg = "none" }
+"ui.gutter.line-number.relative" = { bg = "none" }

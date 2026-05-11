@@ -11,4 +11,4 @@ vim.diagnostic.config({
 })
 
 -- Map 'jj' to Escape in Insert mode (i)
-vim.keymap.set("i", "jj", "<Esc>", { noremap = true, silent = true })
+vim.keymap.set("i", "jk", "<Esc>", { noremap = true, silent = true })
