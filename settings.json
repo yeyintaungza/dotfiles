@@ -16,7 +16,7 @@
     {
       "before": [
         "j",
-        "j"
+        "k"
       ],
       "after": [
         "<Esc>"
@@ -107,6 +107,16 @@
       ],
       "when": "workbench.action.closeWindow"
     },
+    {
+      "before": [
+        "<leader>",
+        "f"
+      ],
+      "commands": [
+        "code-telescope.fuzzy.file"
+      ]
+    },
+    // code-telescope.fuzzy.file
   ],
   "vim.normalModeKeyBindings": [
     {
@@ -343,11 +353,40 @@
   "git.openRepositoryInParentFolders": "never",
   "workbench.activityBar.location": "hidden",
   "workbench.colorCustomizations": {
+    // these are for mono chrome theme
+    // "editorComments.foreground": "#8f8f8f",
+    // "tab.activeBorderTop": "#00aaaa",
+    // Better gutter visibility
+    //"editorGutter.background": "#111111",
+    // Relative line numbers
+    // "editorLineNumber.foreground": "#5a5a5a",
+    // "editorLineNumber.activeForeground": "#ffffff",
     "statusBar.background": "#005f5f",
     "statusBar.noFolderBackground": "#005f5f",
     "statusBar.debuggingBackground": "#005f5f",
     "statusBar.foreground": "#ffffff",
-    "statusBar.debuggingForeground": "#ffffff"
+    "statusBar.debuggingForeground": "#ffffff",
+    // Vim navigation focus
+    "editor.lineHighlightBackground": "#1c1c1c",
+    "editor.lineHighlightBorder": "#2a2a2a",
+    // Git/vim marks
+    "editorGutter.modifiedBackground": "#888888",
+    "editorGutter.addedBackground": "#bbbbbb",
+    "editorGutter.deletedBackground": "#666666"
   },
-  "workbench.colorTheme": "Ayu Dark"
+  "window.commandCenter": false,
+  "workbench.startupEditor": "none",
+  "terminal.integrated.stickyScroll.enabled": false,
+  "workbench.browser.showInTitleBar": false,
+  "workbench.layoutControl.enabled": false,
+  "terminal.integrated.localEchoExcludePrograms": [
+    "vim",
+    "vi"
+  ],
+  "terminal.integrated.defaultLocation": "editor",
+  "ollama.autocomplete.enabled": false,
+  "workbench.iconTheme": "symbols",
+  "ollama.saasUrl": "https://ai-agent.za.net.mm",
+  "ollama.model": "qwen3.6:35b",
+  "workbench.colorTheme": "Kanagawa"
 }
