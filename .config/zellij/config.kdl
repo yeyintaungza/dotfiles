@@ -184,6 +184,7 @@ keybinds {
         bind "Super n" { NewPane; }
         bind "Super i" { MoveTab "Left"; }
         bind "Super o" { MoveTab "Right"; }
+        // gotta remap cmd h for ghostty as something else
         bind "Super h" "Super Left" { MoveFocusOrTab "Left"; }
         bind "Super l" "Super Right" { MoveFocusOrTab "Right"; }
         bind "Super j" "Super Down" { MoveFocus "Down"; }
