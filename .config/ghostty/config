@@ -1,7 +1,7 @@
 font-family = "JetBrainsMono Nerd Font Mono"
-theme = "Catppuccin Macchiato"
+theme = "TokyoNight Night"
 window-decoration = true
-background-opacity = 0.8
+background-opacity = 0.9
 background-blur = true
 font-size = 14
 font-family = "JetBrainsMono Nerd Font"
@@ -9,3 +9,5 @@ window-padding-x = 0
 window-padding-y = 0
 macos-option-as-alt = true
 macos-titlebar-style = hidden
+keybind = super+f=unbind
+keybind = super+n=unbind
