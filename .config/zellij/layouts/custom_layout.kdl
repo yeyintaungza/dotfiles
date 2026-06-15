@@ -57,5 +57,5 @@ layout {
                         datetime_timezone "Europe/London"
                     }
                 }
-                children
+                pane
 }
