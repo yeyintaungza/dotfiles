@@ -4,8 +4,9 @@
 
 keybinds clear-defaults=true {
     normal {
-      bind "Super i" { GoToPreviousTab; }
-      bind "Super o" { GoToNextTab; }
+        bind "Super i" { GoToPreviousTab; }
+        bind "Super o" { GoToNextTab; }
+        bind "Super Shift n" { NewTab; SwitchToMode "normal"; }
     }
     locked {
         bind "Ctrl g" { SwitchToMode "normal"; }
@@ -13,6 +14,7 @@ keybinds clear-defaults=true {
 
         bind "Super i" { GoToPreviousTab; }
         bind "Super o" { GoToNextTab; }
+        bind "Super Shift n" { NewTab; SwitchToMode "normal"; }
     }
     pane {
         bind "left" { MoveFocus "left"; }
