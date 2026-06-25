@@ -33,10 +33,10 @@ return {
       local map = vim.keymap.set
 
       map("n", "gtj", "<cmd>GoTagAdd json<cr>", { desc = "Add json tags" })
-      map("n", "gty", "<cmd>GoTagRm json<cr>", { desc = "Remove json tags" })
+      map("n", "gtr", "<cmd>GoTagRm json<cr>", { desc = "Remove json tags" })
 
       vim.keymap.set("n", "gi", function()
-        local iface = vim.fn.input("Interface: ")
+        local iface = vim.fn.input("Interface Name To Implement: ")
         vim.cmd("GoImpl " .. iface)
       end, { desc = "Generate interface impl" })
 
