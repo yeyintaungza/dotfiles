@@ -29,20 +29,14 @@ return {
         },
         sections = {
           lualine_a = { "mode" },
-          lualine_b = {
-            LazyVim.lualine.root_dir(),
-            {
-              "filetype",
-              icon_only = true,
-              separator = "",
-              padding = { left = 1, right = 0 },
-            },
-          },
+          lualine_b = {},
+
           lualine_c = {
+            LazyVim.lualine.root_dir(),
+            { "filetype", icon_only = true, separator = "", padding = { left = 1, right = 0 } },
             { LazyVim.lualine.pretty_path() },
           },
-          lualine_x = {},
-          lualine_y = {
+          lualine_x = {
             {
               "diagnostics",
               symbols = {
@@ -52,12 +46,28 @@ return {
                 hint = icons.diagnostics.Hint,
               },
             },
-          },
-          lualine_z = {
             {
-              "branch",
-              icon = icons.git.branch,
+              "diff",
+              symbols = {
+                added = icons.git.added,
+                modified = icons.git.modified,
+                removed = icons.git.removed,
+              },
+              source = function()
+                local gitsigns = vim.b.gitsigns_status_dict
+                if gitsigns then
+                  return {
+                    added = gitsigns.added,
+                    modified = gitsigns.changed,
+                    removed = gitsigns.removed,
+                  }
+                end
+              end,
             },
+          },
+          lualine_y = {},
+          lualine_z = {
+            "branch",
           },
         },
         extensions = { "neo-tree", "lazy", "fzf" },
