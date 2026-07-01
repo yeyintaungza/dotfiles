@@ -13,6 +13,8 @@ return {
       end
     end,
     opts = function()
+      vim.api.nvim_set_hl(0, "StatusLine", { bg = "NONE", fg = "NONE" })
+      vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "NONE", fg = "NONE" })
       -- PERF: we don't need this lualine require madness 🤷
       local lualine_require = require("lualine_require")
       lualine_require.require = require
