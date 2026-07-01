@@ -50,7 +50,7 @@ return {
         },
         show = {
           statusline = true, -- only works with global statusline
-          tabline = false,
+          tabline = true,
         },
         win = {
           backdrop = {
