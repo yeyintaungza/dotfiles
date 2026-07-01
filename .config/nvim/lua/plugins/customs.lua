@@ -15,7 +15,7 @@ return {
     opts = function()
       vim.api.nvim_set_hl(0, "StatusLine", { bg = "NONE", fg = "NONE" })
       vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "NONE", fg = "NONE" })
-      -- PERF: we don't need this lualine require madness 🤷
+
       local lualine_require = require("lualine_require")
       lualine_require.require = require
 
@@ -30,12 +30,17 @@ return {
           disabled_filetypes = { statusline = { "dashboard", "alpha", "ministarter", "snacks_dashboard" } },
         },
         sections = {
-          lualine_a = { "mode" },
+          lualine_a = {
+            {
+              "mode",
+              fmt = function(mode)
+                return mode:sub(1, 3)
+              end,
+            },
+          },
           lualine_b = {},
 
           lualine_c = {
-            LazyVim.lualine.root_dir(),
-            { "filetype", icon_only = true, separator = "", padding = { left = 1, right = 0 } },
             { LazyVim.lualine.pretty_path() },
           },
           lualine_x = {
