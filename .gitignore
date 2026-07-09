@@ -1,0 +1,6 @@
+# ignore every thing except the config.toml  inside herdr
+.config/herdr/*
+!.config/herdr/config.toml
+
+.DS_Store
+flutter
