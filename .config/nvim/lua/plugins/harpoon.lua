@@ -27,6 +27,20 @@ return {
           end,
           desc = "Harpoon Quick Menu",
         },
+        {
+          "<leader>j",
+          function()
+            require("harpoon"):list():next()
+          end,
+          desc = "Harpoon Next",
+        },
+        {
+          "<leader>k",
+          function()
+            require("harpoon"):list():prev()
+          end,
+          desc = "Harpoon Previous",
+        },
       }
 
       for i = 1, 9 do
