@@ -352,28 +352,6 @@
   "editor.foldingImportsByDefault": true,
   "git.openRepositoryInParentFolders": "never",
   "workbench.activityBar.location": "hidden",
-  "workbench.colorCustomizations": {
-    // these are for mono chrome theme
-    // "editorComments.foreground": "#8f8f8f",
-    // "tab.activeBorderTop": "#00aaaa",
-    // Better gutter visibility
-    //"editorGutter.background": "#111111",
-    // Relative line numbers
-    // "editorLineNumber.foreground": "#5a5a5a",
-    // "editorLineNumber.activeForeground": "#ffffff",
-    "statusBar.background": "#005f5f",
-    "statusBar.noFolderBackground": "#005f5f",
-    "statusBar.debuggingBackground": "#005f5f",
-    "statusBar.foreground": "#ffffff",
-    "statusBar.debuggingForeground": "#ffffff",
-    // Vim navigation focus
-    "editor.lineHighlightBackground": "#1c1c1c",
-    "editor.lineHighlightBorder": "#2a2a2a",
-    // Git/vim marks
-    "editorGutter.modifiedBackground": "#888888",
-    "editorGutter.addedBackground": "#bbbbbb",
-    "editorGutter.deletedBackground": "#666666"
-  },
   "window.commandCenter": false,
   "workbench.startupEditor": "none",
   "terminal.integrated.stickyScroll.enabled": false,
@@ -388,5 +366,11 @@
   "workbench.iconTheme": "symbols",
   "ollama.saasUrl": "https://ai-agent.za.net.mm",
   "ollama.model": "qwen3.6:35b",
-  "workbench.colorTheme": "Kanagawa"
+  "workbench.colorTheme": "Kanagawa",
+  "workbench.colorCustomizations": {
+    "editor.background": "#011A2F",
+    "sideBar.background": "#001524",
+    "activityBar.background": "#001524",
+    "terminal.background": "#011A2F"
+  }
 }
