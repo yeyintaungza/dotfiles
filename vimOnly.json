@@ -1,4 +1,5 @@
 {
+  "editor.fontFamily": "JetBrainsMono Nerd Font,JetBrains Mono",
   "editor.lineNumbers": "relative",
   "vim.showMarksInGutter": true,
   "vim.foldfix": true,
