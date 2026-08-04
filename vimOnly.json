@@ -319,5 +319,13 @@
       ]
     }
   ],
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [],
+    "editor.selectionHighlight": false,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  }
 }
