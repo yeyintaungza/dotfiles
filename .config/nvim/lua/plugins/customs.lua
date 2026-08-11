@@ -10,12 +10,17 @@ return {
       transparent = false,
 
       on_colors = function(colors)
+        -- Night Owl navy background
+        --colors.bg = "#011627"
         colors.bg = "#0B1220"
-        colors.bg_dark = "#080F1C"
-        colors.bg_sidebar = "#080F1C"
-        colors.bg_float = "#101B2D"
-        colors.bg_highlight = "#1A304B"
+        colors.bg_dark = "#01111d"
+        colors.bg_sidebar = "#01111d"
+        colors.bg_float = "#0B1220"
 
+        -- Slightly brighter selection
+        colors.bg_highlight = "#143652"
+
+        -- Keep Tokyo Night accents
         colors.blue = "#82AAFF"
         colors.cyan = "#7FDBCA"
         colors.green = "#22DA6E"
@@ -24,199 +29,33 @@ return {
         colors.red = "#EF5350"
         colors.magenta = "#C792EA"
 
-        colors.fg = "#C4D2E5"
-        colors.fg_dark = "#8296B2"
-        colors.comment = "#5C6D84"
-
-        colors.border = "#263A54"
-        colors.fg_gutter = "#34445B"
+        -- Foreground
+        colors.fg = "#D6DEEB"
+        colors.fg_dark = "#A6ACCD"
+        colors.comment = "#637777"
       end,
 
       on_highlights = function(hl, c)
-        hl.Normal = {
-          fg = c.fg,
-          bg = c.bg,
-        }
+        hl.Normal = { bg = c.bg }
+        hl.NormalNC = { bg = c.bg }
+        hl.NormalFloat = { bg = c.bg_float }
+        hl.FloatBorder = { fg = "#3B4A63", bg = c.bg_float }
 
-        hl.NormalNC = {
-          fg = c.fg,
-          bg = c.bg,
-        }
+        hl.CursorLine = { bg = "#10243D" }
+        hl.CursorLineNr = { fg = "#82AAFF", bold = true }
 
-        hl.NormalFloat = {
-          fg = c.fg,
-          bg = c.bg_float,
-        }
+        hl.Visual = { bg = "#1D3B53" }
+        hl.Search = { bg = "#2D4F67", fg = c.fg }
+        hl.IncSearch = { bg = "#FFCB8B", fg = "#0B1220" }
 
-        hl.FloatBorder = {
-          fg = "#263A54",
-          bg = c.bg_float,
-        }
+        hl.LineNr = { fg = "#3B4A63" }
+        hl.SignColumn = { bg = c.bg }
 
-        hl.FloatTitle = {
-          fg = c.blue,
-          bg = c.bg_float,
-          bold = true,
-        }
-
-        hl.CursorLine = {
-          bg = "#101B2D",
-        }
-
-        hl.CursorLineNr = {
-          fg = "#8296B2",
-          bold = true,
-        }
-
-        hl.Visual = {
-          bg = "#1A304B",
-        }
-
-        hl.Search = {
-          fg = c.fg,
-          bg = "#1C3552",
-        }
-
-        hl.IncSearch = {
-          fg = "#0B1220",
-          bg = "#ECC48D",
-        }
-
-        hl.CurSearch = {
-          fg = "#0B1220",
-          bg = "#ECC48D",
-        }
-
-        hl.LineNr = {
-          fg = "#34445B",
-        }
-
-        hl.SignColumn = {
-          bg = "#080F1C",
-        }
-
-        hl.GitSignsAdd = {
-          fg = "#294D45",
-          bg = "#080F1C",
-        }
-
-        hl.GitSignsChange = {
-          fg = "#31547A",
-          bg = "#080F1C",
-        }
-
-        hl.GitSignsDelete = {
-          fg = "#5A3440",
-          bg = "#080F1C",
-        }
-
-        hl.Pmenu = {
-          fg = c.fg,
-          bg = "#101B2D",
-        }
-
-        hl.PmenuSel = {
-          fg = c.fg,
-          bg = "#1A304B",
-        }
-
-        hl.PmenuSbar = {
-          bg = "#1A2B42",
-        }
-
-        hl.PmenuThumb = {
-          bg = "#304A6D",
-        }
-
-        hl.LspInfoBorder = {
-          fg = "#263A54",
-          bg = "#101B2D",
-        }
-
-        hl.HoverNormal = {
-          fg = c.fg,
-          bg = "#101B2D",
-        }
-
-        hl.MsgArea = {
-          fg = c.fg,
-          bg = c.bg,
-        }
-
-        hl.MoreMsg = {
-          fg = c.blue,
-        }
-
-        hl.Question = {
-          fg = c.cyan,
-        }
-
-        hl.ErrorMsg = {
-          fg = c.red,
-        }
-
-        hl.WarningMsg = {
-          fg = c.yellow,
-        }
-
-        hl.StatusLine = {
-          fg = c.fg,
-          bg = "#0D1728",
-        }
-
-        hl.StatusLineNC = {
-          fg = "#8296B2",
-          bg = "#0D1728",
-        }
-
-        hl.TabLine = {
-          fg = "#5C6D84",
-          bg = "#080F1C",
-        }
-
-        hl.TabLineFill = {
-          bg = "#080F1C",
-        }
-
-        hl.TabLineSel = {
-          fg = "#C4D2E5",
-          bg = "#0B1220",
-          bold = true,
-        }
-
-        hl.WinBar = {
-          fg = "#8296B2",
-          bg = "#0B1220",
-        }
-
-        hl.WinBarNC = {
-          fg = "#5C6D84",
-          bg = "#0B1220",
-        }
-
-        hl.WinSeparator = {
-          fg = "#111D2E",
-          bg = c.bg,
-        }
-
-        hl.VertSplit = {
-          fg = "#111D2E",
-          bg = c.bg,
-        }
-
-        hl.Folded = {
-          fg = "#8296B2",
-          bg = "#101B2D",
-        }
-
-        hl.FoldColumn = {
-          fg = "#34445B",
-          bg = "#080F1C",
-        }
+        hl.Pmenu = { bg = "#011B2B" }
+        hl.PmenuSel = { bg = "#1D3B53" }
       end,
     },
   },
-
   {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
