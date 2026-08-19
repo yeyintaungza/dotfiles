@@ -22,36 +22,12 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
-        "s"
-      ],
-      "commands": [
-        "flash-vscode.start"
-      ]
-    },
-    {
-      "before": [
         "<leader>",
         "s",
         "d"
       ],
       "commands": [
         "workbench.panel.markers.view.focus"
-      ]
-    },
-    {
-      "before": [
-        "S"
-      ],
-      "commands": [
-        "flash-vscode.startSelection"
-      ]
-    },
-    {
-      "before": [
-        "<BS>"
-      ],
-      "commands": [
-        "flash-vscode.backspace"
       ]
     },
     {
@@ -73,35 +49,6 @@
       "commands": [
         "workbench.action.closeActiveEditor"
       ]
-    },
-    {
-      "before": [
-        ":",
-        "w",
-        "<CR>"
-      ],
-      "commands": [
-        "workbench.action.files.save"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "w"
-      ],
-      "commands": [
-        "workbench.action.files.save"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "q"
-      ],
-      "commands": [
-        "workbench.action.closeWindow"
-      ],
-      "when": "workbench.action.closeWindow"
     }
   ],
   "vim.normalModeKeyBindings": [
@@ -177,33 +124,6 @@
     },
     {
       "before": [
-        "g",
-        "D"
-      ],
-      "commands": [
-        "editor.action.revealDeclaration"
-      ]
-    },
-    {
-      "before": [
-        "g",
-        "I"
-      ],
-      "commands": [
-        "editor.action.goToImplementation"
-      ]
-    },
-    {
-      "before": [
-        "g",
-        "y"
-      ],
-      "commands": [
-        "editor.action.goToTypeDefinition"
-      ]
-    },
-    {
-      "before": [
         "K"
       ],
       "commands": [
@@ -231,96 +151,18 @@
         "editor.action.rename"
       ],
       "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
-    },
-    {
-      "before": [
-        "<leader>",
-        "e"
-      ],
-      "commands": [
-        "workbench.action.toggleSidebarVisibility"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "E"
-      ],
-      "commands": [
-        "workbench.explorer.fileView.toggleVisibility"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "<space>"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "f",
-        "b"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "f",
-        "f"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "f",
-        "F"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "f",
-        "r"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "f",
-        "R"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "u",
-        "C"
-      ],
-      "commands": [
-        "workbench.action.selectTheme"
-      ]
     }
   ],
-  "editor.minimap.enabled": false,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [],
+    "editor.selectionHighlight": false,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "editor.foldingImportsByDefault": true,
+  "window.titleBarStyle": "custom",
   "workbench.colorCustomizations": {
     "editor.background": "#0B1220",
     "sideBar.background": "#080F1C",
@@ -375,12 +217,14 @@
     "editor.lineHighlightBackground": "#101B2D",
     "editor.lineHighlightBorder": "#1C3552"
   },
-  "[dart]": {
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.rulers": [],
-    "editor.selectionHighlight": false,
-    "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": "off"
-  }
+  "git.blame.editorDecoration.enabled": true,
+  "editor.accessibilitySupport": "off",
+  "terminal.integrated.stickyScroll.enabled": false,
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.size": "fit",
+  "editor.minimap.enabled": false
 }
