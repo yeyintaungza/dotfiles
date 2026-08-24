@@ -12,18 +12,3 @@ vim.diagnostic.config({
 
 -- Map 'jj' to Escape in Insert mode (i)
 vim.keymap.set("i", "jk", "<Esc>", { noremap = true, silent = true })
-
-vim.keymap.set("n", "hh", "zz", {
-  desc = "Center cursor",
-  nowait = true,
-})
-
-vim.keymap.set("n", "ht", "zt", {
-  desc = "Cursor to top",
-  nowait = true,
-})
-
-vim.keymap.set("n", "hb", "zb", {
-  desc = "Cursor to bottom",
-  nowait = true,
-})
