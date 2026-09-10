@@ -12,3 +12,6 @@ vim.diagnostic.config({
 
 -- Map 'jj' to Escape in Insert mode (i)
 vim.keymap.set("i", "jk", "<Esc>", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<leader>gd", "<cmd>Gitsigns diff<CR>")
+vim.keymap.set("n", "<leader>gD", "<cmd>Gitsigns diffthis<CR>")
