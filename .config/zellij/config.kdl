@@ -14,43 +14,36 @@ keybinds clear-defaults=true {
   }
 
 
-   locked {
-        bind "Ctrl r" { SwitchToMode "renametab"; TabNameInput 0; }
-        bind "Ctrl g" { SwitchToMode "normal"; }
-        bind "Ctrl Shift h" { NewPane "left";}
-        bind "Ctrl Shift j" { NewPane "down";}
-        bind "Ctrl Shift k" { NewPane "up";}
-        bind "Ctrl Shift  l" { NewPane "right";}
-        bind "Ctrl f" {ToggleFocusFullscreen;}
-        bind "Ctrl q" { CloseFocus; }
-        bind "Ctrl Shift q" { CloseTab; }
+  locked {
+    // Mode switching
+    bind "Ctrl r" { SwitchToMode "renametab"; TabNameInput 0; }
+    bind "Ctrl g" { SwitchToMode "normal"; }
 
-        bind "Alt f" { ToggleFloatingPanes; }
-        bind "Alt i" { GoToPreviousTab; }
-        bind "Alt o" { GoToNextTab; }
-        bind "Alt Shift n" { NewTab; SwitchToMode "normal"; }
+    // Pane creation
+    bind "Ctrl Shift h" { NewPane "left"; }
+    bind "Ctrl Shift j" { NewPane "down"; }
+    bind "Ctrl Shift k" { NewPane "up"; }
+    bind "Ctrl Shift l" { NewPane "right"; }
 
-        bind "Alt Shift i" { MoveTab "left"; }
-        bind "Alt Shift o" { MoveTab "right"; }
+    // Pane/tab actions
+    bind "Ctrl f" { ToggleFocusFullscreen; }
+    bind "Ctrl q" { CloseFocus; }
+    bind "Ctrl Shift q" { CloseTab; }
 
-        bind "Alt h" { MoveFocus "left"; }
-        bind "Alt j" { MoveFocus "down"; }
-        bind "Alt k" { MoveFocus "up"; }
-        bind "Alt l" { MoveFocus "right"; }
+    // Alt + Super shared bindings
+    bind "Alt f" "Super f" { ToggleFloatingPanes; }
+    bind "Alt i" "Super i" { GoToPreviousTab; }
+    bind "Alt o" "Super o" { GoToNextTab; }
+    bind "Alt Shift n" "Super Shift n" { NewTab; }
 
-        bind "Super f" { ToggleFloatingPanes; }
-        bind "Super i" { GoToPreviousTab; }
-        bind "Super o" { GoToNextTab; }
-        bind "Super Shift n" { NewTab; }
+    bind "Alt Shift i" "Super Shift i" { MoveTab "left"; }
+    bind "Alt Shift o" "Super Shift o" { MoveTab "right"; }
 
-        bind "Super Shift i" { MoveTab "left"; }
-        bind "Super Shift o" { MoveTab "right"; }
-
-        bind "Super h" { MoveFocus "left"; }
-        bind "Super j" { MoveFocus "down"; }
-        bind "Super k" { MoveFocus "up"; }
-        bind "Super l" { MoveFocus "right"; }
-   }
+    bind "Alt h" "Super h" { MoveFocus "left"; }
+    bind "Alt j" "Super j" { MoveFocus "down"; }
+    bind "Alt k" "Super k" { MoveFocus "up"; }
+    bind "Alt l" "Super l" { MoveFocus "right"; }
+  }
     
     session {
         bind "a" {
