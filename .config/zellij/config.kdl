@@ -1,3 +1,4 @@
+theme "kanagawa"
 default_mode "locked"
 
 keybinds clear-defaults=true {
@@ -6,8 +7,15 @@ keybinds clear-defaults=true {
         bind "Ctrl q" { Quit; }
         bind "Ctrl o" { SwitchToMode "session"; }
    }
+  renametab {
+    bind "Enter" { SwitchToMode "locked"; }
+    bind "Esc" { UndoRenameTab; SwitchToMode "locked"; }
+    bind "Ctrl c" { SwitchToMode "locked"; }
+  }
+
 
    locked {
+        bind "Ctrl r" { SwitchToMode "renametab"; TabNameInput 0; }
         bind "Ctrl g" { SwitchToMode "normal"; }
         bind "Ctrl Shift h" { NewPane "left";}
         bind "Ctrl Shift j" { NewPane "down";}
@@ -110,17 +118,12 @@ plugins {
     }
 }
 
-// Plugins to load in the background when a new session starts
-// eg. "file:/path/to/my-plugin.wasm"
-// eg. "https://example.com/my-plugin.wasm"
 load_plugins {
     "file:/Users/zacompany/.dotfiles/.config/zellij/plugins/zjstatus.wasm"
 }
 web_client {
     font "monospace"
 }
- 
-theme "kanagawa"
  
 default_layout "custom_layout"
  
