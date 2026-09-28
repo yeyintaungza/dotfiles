@@ -9,10 +9,10 @@ keybinds clear-defaults=true {
 
    locked {
         bind "Ctrl g" { SwitchToMode "normal"; }
-        bind "Ctrl h" { NewPane "left";}
-        bind "Ctrl j" { NewPane "down";}
-        bind "Ctrl k" { NewPane "up";}
-        bind "Ctrl l" { NewPane "right";}
+        bind "Ctrl Shift h" { NewPane "left";}
+        bind "Ctrl Shift j" { NewPane "down";}
+        bind "Ctrl Shift k" { NewPane "up";}
+        bind "Ctrl Shift  l" { NewPane "right";}
         bind "Ctrl f" {ToggleFocusFullscreen;}
         bind "Ctrl q" { CloseFocus; }
         bind "Ctrl Shift q" { CloseTab; }
