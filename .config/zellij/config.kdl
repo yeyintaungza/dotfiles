@@ -51,7 +51,7 @@ keybinds clear-defaults=true {
     // ─── Normal ───────────────────────────────────────────────────
     normal {
         bind "Ctrl g" "Esc" { SwitchToMode "locked"; }
-        bind "Ctrl o"       { SwitchToMode "session"; }
+        bind "Ctrl Shift o"       { SwitchToMode "session"; }
         bind "Ctrl q"       { Quit; }
     }
 
