@@ -9,7 +9,7 @@ keybinds clear-defaults=true {
     locked {
         // Mode switching
         bind "Ctrl g" { SwitchToMode "normal"; }
-        bind "Ctrl o" { SwitchToMode "session"; }
+        bind "Ctrl Shift o" { SwitchToMode "session"; }
         bind "Alt r" "Super r" { SwitchToMode "renametab"; TabNameInput 0; }
 
         // Pane creation
@@ -64,7 +64,7 @@ keybinds clear-defaults=true {
 
     // ─── Session ──────────────────────────────────────────────────
     session {
-        bind "Esc" "Ctrl o" { SwitchToMode "locked"; }
+        bind "Esc" "Ctrl Shift o" { SwitchToMode "locked"; }
         bind "d"            { Detach; }
 
         bind "w" {
